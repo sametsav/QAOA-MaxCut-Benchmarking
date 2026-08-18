@@ -1,0 +1,17 @@
+# Quantum Development Kit (v1.x and above required)
+qiskit>=1.0.0
+
+# IBM Cloud and Hardware Execution Primitives
+qiskit-ibm-runtime>=0.23.0
+
+# Graph Creation and Max-Cut Modeling
+networkx>=3.0
+
+# Classical Optimization Algorithms (COBYLA, SPSA, etc.)
+scipy>=1.10.0
+
+# Mathematical and Vector Operations
+numpy>=1.23.0
+
+# For benchmarking plots and convergence curves in future phases
+matplotlib>=3.7.0
