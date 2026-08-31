@@ -1,11 +1,15 @@
+import os
+from dotenv import load_dotenv
 from qiskit.circuit.library import QAOAAnsatz
 from qiskit import transpile
 from qiskit_ibm_runtime import QiskitRuntimeService
 from max_cut import create_graph, get_cost_hamiltonian
 
+load_dotenv()
+
 service = QiskitRuntimeService(
     channel="ibm_cloud",
-    token="q_l81WCGysaiR8quz1UfQcCc88mXU3XodyWGcIr_1saS",
+    token=os.getenv("IBM_TOKEN"),
     instance="crn:v1:bluemix:public:quantum-computing:us-east:a/8c53ff01b9f0440c8230d32e0ed8630a:4dcbb948-4cc2-4b8a-9451-3ac10cf6736c::"
 )
 
